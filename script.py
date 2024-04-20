@@ -50,7 +50,7 @@ class PDFChangeHandler(FileSystemEventHandler):
                             annotation = {
                                 "subtype": obj["/Subtype"],
                                 "content": obj.get("/Contents", ""),
-                                "location": remapped_location if subtype == "/FreeText" else None
+                                "location": remapped_location
                             }
                             annotations_export.append(annotation)
                         elif subtype == "/Highlight":
@@ -59,7 +59,7 @@ class PDFChangeHandler(FileSystemEventHandler):
                             annotation = {
                                 "subtype": obj["/Subtype"],
                                 "content": obj.get("/Contents", ""),
-                                "location": remapped_location,
+                                "location": remapped_location
                             }
                             annotations_export.append(annotation)
                         else:
