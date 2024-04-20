@@ -1,1 +1,224 @@
-[{"subtype": "/Text", "content": "A"}, {"subtype": "/Text", "content": "A"}, {"subtype": "/Text", "content": "ne pas afficher les cam\u00e9ra"}, {"subtype": "/Text", "content": "d\u00e9caler panneau affichage"}, {"subtype": "/Text", "content": "c'est quoi?"}, {"subtype": "/Text", "content": "c'est quoi?"}, {"subtype": "/Text", "content": "Cloison dans le chassis voir avec Michele si on supprime le chassis"}, {"subtype": "/Text", "content": "masquer les prises"}, {"subtype": "/Text", "content": "cloison jusqu'\u00e0 la fa\u00e7ade"}, {"subtype": "/Text", "content": "encoffrer poteau"}, {"subtype": "/Text", "content": "protection couloir pas \u00e0 jour"}, {"subtype": "/Text", "content": "poteau trop gros et mal cal\u00e9"}, {"subtype": "/Text", "content": "protection couloir qui d\u00e9borde"}, {"subtype": "/Text", "content": "cloison normal pas grise"}, {"subtype": "/Text", "content": "encoffrer ce poteau"}, {"subtype": "/Text", "content": "encoffrer poteau"}, {"subtype": "/Text", "content": "paillasse dns poteau"}, {"subtype": "/Text", "content": "pourquoi certain ch\u00e2ssis marron et d'autres non"}, {"subtype": "/Text", "content": "c'est quoi ce ront ?"}, {"subtype": "/Text", "content": "noter banquette"}, {"subtype": "/Text", "content": "voile juqu'au mur"}, {"subtype": "/Text", "content": "plan elie + cote alti"}, {"subtype": "/Text", "content": "annoter \u00e9chelle \u00e0 crinolyne"}, {"subtype": "/Text", "content": "trop de trait"}, {"subtype": "/Text", "content": "trait marron ?"}, {"subtype": "/Text", "content": "manque pi\u00e8ces"}, {"subtype": "/Text", "content": "?"}]
+[
+    {
+        "author": "JJanssen",
+        "subtype": "/FreeText",
+        "bounding_box": [
+            [
+                1088.988,
+                237.0323
+            ],
+            [
+                1135.512,
+                463.3081
+            ]
+        ],
+        "date": "D:20240420135303+02'00'",
+        "contents": "Little mark-up text here"
+    },
+    {
+        "author": "JJanssen",
+        "subtype": "/FreeText",
+        "bounding_box": [
+            [
+                1137.03,
+                1690.52
+            ],
+            [
+                1194.73,
+                1933.079
+            ]
+        ],
+        "date": "D:20240420135437+02'00'",
+        "contents": "Revision cloud with label"
+    },
+    {
+        "author": "JJanssen",
+        "subtype": "/FreeText",
+        "bounding_box": [
+            [
+                921.6843,
+                784.4124
+            ],
+            [
+                1194.501,
+                950.0506
+            ]
+        ],
+        "date": "D:20240420135539+02'00'",
+        "contents": "Call out with Leader"
+    },
+    {
+        "author": "JJanssen",
+        "subtype": "/Line",
+        "bounding_box": [
+            [
+                1226.439,
+                305.2757
+            ],
+            [
+                1341.888,
+                676.2548
+            ]
+        ],
+        "date": "D:20240420135657+02'00'",
+        "location": [
+            [
+                1334.388,
+                312.7757
+            ],
+            [
+                1233.939,
+                668.7548
+            ]
+        ],
+        "arrow_type": [
+            "/None",
+            "/None"
+        ]
+    },
+    {
+        "author": "JJanssen",
+        "subtype": "/Line",
+        "bounding_box": [
+            [
+                1324.769,
+                607.1489
+            ],
+            [
+                1469.019,
+                944.4769
+            ]
+        ],
+        "date": "D:20240420135711+02'00'",
+        "location": [
+            [
+                1335.269,
+                617.6489
+            ],
+            [
+                1448.936,
+                933.9769
+            ]
+        ],
+        "arrow_type": [
+            "/None",
+            "/OpenArrow"
+        ]
+    },
+    {
+        "author": "JJanssen",
+        "subtype": "/Line",
+        "bounding_box": [
+            [
+                1309.705,
+                1604.862
+            ],
+            [
+                1354.053,
+                1795.791
+            ]
+        ],
+        "date": "D:20240420135813+02'00'",
+        "location": [
+            [
+                1340.556,
+                1610.362
+            ],
+            [
+                1343.2,
+                1790.114
+            ]
+        ],
+        "arrow_type": [
+            "/ClosedArrow",
+            "/ClosedArrow"
+        ]
+    },
+    {
+        "author": "JJanssen",
+        "subtype": "/Line",
+        "bounding_box": [
+            [
+                1177.698,
+                1517.128
+            ],
+            [
+                1287.901,
+                1646.702
+            ]
+        ],
+        "date": "D:20240420140053+02'00'",
+        "location": [
+            [
+                1282.401,
+                1530.179
+            ],
+            [
+                1192.525,
+                1641.202
+            ]
+        ],
+        "arrow_type": [
+            "/ClosedArrow",
+            "/ClosedArrow"
+        ]
+    },
+    {
+        "author": "JJanssen",
+        "subtype": "/Line",
+        "bounding_box": [
+            [
+                840.9039,
+                1630.06
+            ],
+            [
+                921.9359,
+                1751.54
+            ]
+        ],
+        "date": "D:20240420140132+02'00'",
+        "location": [
+            [
+                891.4199,
+                1652.16
+            ],
+            [
+                891.4199,
+                1729.44
+            ]
+        ],
+        "arrow_type": [
+            "/ClosedArrow",
+            "/ClosedArrow"
+        ]
+    },
+    {
+        "author": "JJanssen",
+        "subtype": "/Line",
+        "bounding_box": [
+            [
+                795.9102,
+                1722.852
+            ],
+            [
+                878.9421,
+                1813.34
+            ]
+        ],
+        "date": "D:20240420140137+02'00'",
+        "location": [
+            [
+                847.6385,
+                1729.44
+            ],
+            [
+                847.2136,
+                1806.84
+            ]
+        ],
+        "arrow_type": [
+            "/Butt",
+            "/Butt"
+        ]
+    }
+]
