@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34031.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tag-it.Revit", "Tag-it.Revit\Tag-it.Revit\Tag-it.Revit.csproj", "{AE78202B-0C2A-4B4A-8E1E-5DCF7FE47F67}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE78202B-0C2A-4B4A-8E1E-5DCF7FE47F67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE78202B-0C2A-4B4A-8E1E-5DCF7FE47F67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE78202B-0C2A-4B4A-8E1E-5DCF7FE47F67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE78202B-0C2A-4B4A-8E1E-5DCF7FE47F67}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A76CDDFB-79EC-49EC-9B33-1CA9934716C6}
+	EndGlobalSection
+EndGlobal
