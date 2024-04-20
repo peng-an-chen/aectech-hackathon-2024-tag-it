@@ -1,13 +1,26 @@
 __all__ = ["FreeTextAnnotation", "LineAnnotation", "PolylineAnnotation", "PolygonAnnotation", "CircleAnnotation", "InkAnnotation"]
 
+
+
 class BaseAnnotation(object):
     def __init__(self, pypdf_obj):
         self.date = pypdf_obj['/CreationDate']
         self.subtype = pypdf_obj['/Subtype']
         self.author = pypdf_obj['/T']
         self.color = pypdf_obj['/C']
-        self.bounding_box = [[pypdf_obj['/Rect'][i], pypdf_obj['/Rect'][i + 1]] for i in range(0, len(pypdf_obj['/Rect']), 2)]
         self.contents = pypdf_obj['/Contents'] if '/Contents' in pypdf_obj else None
+        self.page = pypdf_obj['/P']
+        self.bounding_box = self.getRemappedLocation(pypdf_obj)
+
+    def getRemappedLocation(self, pypdf_obj):
+        pageMediaBox = self.page["/MediaBox"]
+        x1, y1, x2, y2 = pypdf_obj["/Rect"]
+        x1 = x1 / pageMediaBox[2]
+        x2 = x2 / pageMediaBox[2]
+        y1 = y1 / pageMediaBox[3]
+        y2 = y2 / pageMediaBox[3]
+        return [[x1, y1], [x2, y2]]
+
 
     def to_json(self):
         return {
