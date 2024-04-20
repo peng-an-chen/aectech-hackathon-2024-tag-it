@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>Tag-it Application</Name>
+    <Assembly>Tag-it.Revit.dll</Assembly>
+    <AddInId>cf7da94b-f286-4b8b-9956-831dc5c155ed</AddInId>
+    <FullClassName>Tag_it.Revit.App</FullClassName>
+    <VendorId>AECTech Barcelona Hackathon - Tag it!</VendorId>
+    <VendorDescription>https://github.com/peng-an-chen/aectech-hackathon-2024-tag-it</VendorDescription>
+  </AddIn>
+</RevitAddIns>
