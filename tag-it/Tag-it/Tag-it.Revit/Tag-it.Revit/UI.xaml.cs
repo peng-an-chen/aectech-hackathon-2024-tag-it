@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Autodesk.Revit.UI;
 using Autodesk.Revit.DB;
+using System.Collections.ObjectModel;
 
 namespace Tag_it.Revit
 {
@@ -30,6 +31,9 @@ namespace Tag_it.Revit
 
         private readonly EventHandlerWithStringArg _mExternalMethodStringArg;
         private readonly EventHandlerWithWpfArg _mExternalMethodWpfArg;
+
+        public string MarkupFolder = string.Empty;
+        public ObservableCollection<Mappings> SheetMappings = new ObservableCollection<Mappings>();
 
         public Ui(UIApplication uiApp, EventHandlerWithStringArg evExternalMethodStringArg,
             EventHandlerWithWpfArg eExternalMethodWpfArg)
@@ -60,10 +64,11 @@ namespace Tag_it.Revit
             _mExternalMethodStringArg.Raise($"Title: {_doc.Title}");
         }
 
-        private void BExternalMethod1_Click(object sender, RoutedEventArgs e)
+        private void SelectFolderCommand_Click(object sender, RoutedEventArgs e)
         {
-            // Raise external event with this UI instance (WPF) as an argument
-            _mExternalMethodWpfArg.Raise(this);
+            Methods.SelectFolder(this, _doc);
+            Methods.LoadAnnotations(this, _doc);
+            UserAlert();
         }
 
         #endregion
