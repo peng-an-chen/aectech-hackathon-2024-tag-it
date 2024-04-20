@@ -16,6 +16,14 @@ class PDFChangeHandler(FileSystemEventHandler):
             self.process_pdf(event.src_path)
 
     def process_pdf(self, filename):
+        # remove the directory path from the filename and keep only the filename and remove extension
+        sheetName = filename.split("/")[-1].split(".")[0]
+
+        # remove (Annotated) from the filename
+        if " (Annotated)" in sheetName:
+            sheetName = sheetName.replace(" (Annotated)", "")
+        
+        export = { "sheetName": sheetName }
         with open(filename, "rb") as file:  # Use context manager to handle the file
             reader = PdfReader(file)
             annotations_export = []
@@ -48,14 +56,15 @@ class PDFChangeHandler(FileSystemEventHandler):
                             print("Unsupported annotation type:", subtype)
 
             # Serialize and write annotations to JSON
-            annotations_export_json = json.dumps(annotations_export)
+            export["annotations"] = annotations_export
+            export_json = json.dumps(export)
             with open('annotations.json', 'w') as f:
-                f.write(annotations_export_json)
+                f.write(export_json)
             print("Processed annotations written to 'annotations.json'.")
 
 # Main setup for watchdog
 directory_to_watch = "./sample/"  # Watching the current directory
-file_to_watch = "sample/A102_Annotated.pdf"
+file_to_watch = "sample/A102 Plans (Annotated).pdf"
 event_handler = PDFChangeHandler(file_to_watch)
 observer = Observer()
 observer.schedule(event_handler, path=directory_to_watch, recursive=False)
