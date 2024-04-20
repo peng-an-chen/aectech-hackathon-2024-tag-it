@@ -45,7 +45,6 @@ class PDFChangeHandler(FileSystemEventHandler):
                         subtype = obj["/Subtype"]
                         x1, y1, x2, y2 = obj["/Rect"]
                         remapped_location = remapLocations(pageMediaBox, [[x1, y1], [x2, y2]])
-                        location = [[float(x1), float(y1)], [float(x2), float(y2)]]
 
                         if subtype in ["/Text", "/FreeText"]:
                             annotation = {
@@ -60,7 +59,7 @@ class PDFChangeHandler(FileSystemEventHandler):
                             annotation = {
                                 "subtype": obj["/Subtype"],
                                 "content": obj.get("/Contents", ""),
-                                # "quad_points": [[x1, y1], [x2, y2], [x3, y3], [x4, y4]]
+                                "location": remapped_location,
                             }
                             annotations_export.append(annotation)
                         else:
