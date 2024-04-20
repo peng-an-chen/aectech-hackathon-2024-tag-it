@@ -1,7 +1,10 @@
 from pypdf import PdfReader
 import json
 from watchdog.events import FileSystemEventHandler
+from websockets import ConnectionClosedOK
 from annotations import *
+import asyncio
+from websockets.sync.client import connect
 
 class PDFChangeHandler(FileSystemEventHandler):
     def __init__(self, filename):
@@ -75,6 +78,15 @@ class PDFChangeHandler(FileSystemEventHandler):
             # Serialize and write annotations to JSON
             export["annotations"] = annotations_export
             export_json = json.dumps(export)
+            
             with open('annotations.json', 'w') as f:
                 f.write(export_json)
+            
+            with connect("ws://localhost:8000") as websocket:
+                try:
+                    websocket.send(export_json)
+                except ConnectionClosedOK:
+                    print("Connection closed")
+                
+
             print("Processed annotations written to 'annotations.json'.")

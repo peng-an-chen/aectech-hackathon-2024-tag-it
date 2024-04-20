@@ -3,9 +3,10 @@ from watchdog.observers import Observer
 from lib import PDFChangeHandler
 
 # Main setup for watchdog
-directory_to_watch = "./sample/"  # Watching the current directory
+directory_to_watch = "./sample/"
 file_to_watch = "sample/A102 Plans (Annotated).pdf"
 event_handler = PDFChangeHandler(file_to_watch)
+
 observer = Observer()
 observer.schedule(event_handler, path=directory_to_watch, recursive=False)
 observer.start()
