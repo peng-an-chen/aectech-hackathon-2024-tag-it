@@ -36,6 +36,7 @@ class PDFChangeHandler(FileSystemEventHandler):
                     for annot in page["/Annots"]:
                         obj = annot.get_object()
                         subtype = obj["/Subtype"]
+                        print (obj, '\n')
                         if subtype == "/FreeText":
                             freetext_annotation = FreeTextAnnotation(obj)
                             annotations_export.append(freetext_annotation.to_json())

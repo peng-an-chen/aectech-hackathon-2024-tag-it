@@ -6,7 +6,7 @@ from annotations import *
 pdf_directory = "C://GitLab//aectech-hackathon-2024-tag-it//sample"
 src_directory = "C://GitLab//aectech-hackathon-2024-tag-it//src"
 json_directory = "C://GitLab//aectech-hackathon-2024-tag-it//json"
-reader = PdfReader(pdf_directory + "//A102_Annotated.pdf")
+reader = PdfReader(pdf_directory + "//A102 Plans (Annotated).pdf")
 
 # def remove_indirect_objects(dictionary):
 #     cleaned_dict = {}
@@ -68,24 +68,6 @@ for page in reader.pages:
             elif subtype == "/Ink":
                 ink_annotation = InkAnnotation(obj)
                 annotations_export.append(ink_annotation.to_json())
-
-            # if subtype == "/Text":
-            #     annotation = {"subtype": obj["/Subtype"], "content": obj["/Contents"]}
-            #     annotations_export.append(annotation)
-            # elif subtype == "/FreeText":
-            #     freetext_annotation = FreeTextAnnotation(obj)
-            #     annotations_export.append(freetext_annotation.to_json())
-            # elif subtype == "/Highlight":
-            #         coords = annot.get_object()["/QuadPoints"]
-            #         x1, y1, x2, y2, x3, y3, x4, y4 = coords
-            #         annotation = {"subtype": obj["/Subtype"], "content": obj["/Contents"],
-            #                       # "quad_points": [[x1, y1], [x2, y2], [x3, y3], [x4, y4]]
-            #                       }
-            #         annotations_export.append(annotation)
-            # else:
-            #     annotation = {"subtype": obj["/Subtype"], "location": location}
-                # print("Annotation type not supported: ", obj["/Subtype"])
-            # print(annotation)
 
 # Serialize annotations_export
 annotations_export_json = json.dumps(annotations_export, indent=4)
