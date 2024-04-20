@@ -1,224 +1,671 @@
 [
     {
-        "author": "JJanssen",
-        "subtype": "/FreeText",
-        "bounding_box": [
-            [
-                1088.988,
-                237.0323
-            ],
-            [
-                1135.512,
-                463.3081
-            ]
-        ],
-        "date": "D:20240420135303+02'00'",
-        "contents": "Little mark-up text here"
+        "/Subj": "Text Box",
+        "/Type": "/Annot",
+        "/P": null,
+        "/F": 4,
+        "/C": null,
+        "/CreationDate": "D:20240420135303+02'00'",
+        "/T": "JJanssen",
+        "/Subtype": "/FreeText",
+        "/BS": {
+            "/W": 2,
+            "/S": "/D",
+            "/Type": "/Border",
+            "/D": null
+        },
+        "/DA": "1 0 0 rg /Helv 16 Tf",
+        "/DS": "font: Helvetica 16pt; text-align:left; margin:3pt; line-height:18.4pt; color:#FF0000",
+        "/M": "D:20240420135335+02'00'",
+        "/Rotate": 90,
+        "/AP": {
+            "/N": null
+        },
+        "/Rect": null,
+        "/NM": "KHEZMHUKFXLYCFOP",
+        "/RC": "<?xml version=\"1.0\"?><body xmlns:xfa=\"http://www.xfa.org/schema/xfa-data/1.0/\" xfa:contentType=\"text/html\" xfa:APIVersion=\"BluebeamPDFRevu:2018\" xfa:spec=\"2.2.0\" style=\"font:Helvetica 16pt; text-align:left; margin:3pt; line-height:18.4pt; color:#FF0000\" xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"line-height:18.4pt; font-size:16pt\">Little mark-up text here</p></body>",
+        "/Contents": "Little mark-up text here"
     },
     {
-        "author": "JJanssen",
-        "subtype": "/FreeText",
-        "bounding_box": [
-            [
-                1137.03,
-                1690.52
-            ],
-            [
-                1194.73,
-                1933.079
-            ]
-        ],
-        "date": "D:20240420135437+02'00'",
-        "contents": "Revision cloud with label"
+        "/Subj": "Highlight",
+        "/Type": "/Annot",
+        "/P": null,
+        "/F": 4,
+        "/C": null,
+        "/CreationDate": "D:20240420135345+02'00'",
+        "/T": "JJanssen",
+        "/Subtype": "/Ink",
+        "/BS": {
+            "/W": 12,
+            "/S": "/S",
+            "/Type": "/Border"
+        },
+        "/BM": "/Multiply",
+        "/M": "D:20240420135345+02'00'",
+        "/AP": {
+            "/N": null
+        },
+        "/InkList": null,
+        "/Rect": null,
+        "/NM": "BLLJQIIHAHBFOWMG"
     },
     {
-        "author": "JJanssen",
-        "subtype": "/FreeText",
-        "bounding_box": [
-            [
-                921.6843,
-                784.4124
-            ],
-            [
-                1194.501,
-                950.0506
-            ]
-        ],
-        "date": "D:20240420135539+02'00'",
-        "contents": "Call out with Leader"
+        "/Subj": "Pen",
+        "/Type": "/Annot",
+        "/P": null,
+        "/F": 4,
+        "/C": null,
+        "/CreationDate": "D:20240420135350+02'00'",
+        "/T": "JJanssen",
+        "/Subtype": "/Ink",
+        "/BS": {
+            "/W": 5,
+            "/S": "/S",
+            "/Type": "/Border"
+        },
+        "/M": "D:20240420135403+02'00'",
+        "/AP": {
+            "/N": null
+        },
+        "/InkList": null,
+        "/Rect": null,
+        "/NM": "MQDVSVKWRIGCLPIK",
+        "/Contents": "E",
+        "/RC": "<?xml version=\"1.0\"?><body xmlns:xfa=\"http://www.xfa.org/schema/xfa-data/1.0/\" xfa:contentType=\"text/html\" xfa:APIVersion=\"BluebeamPDFRevu:2018\" xfa:spec=\"2.2.0\" xmlns=\"http://www.w3.org/1999/xhtml\"><p>E</p></body>"
     },
     {
-        "author": "JJanssen",
-        "subtype": "/Line",
-        "bounding_box": [
-            [
-                1226.439,
-                305.2757
-            ],
-            [
-                1341.888,
-                676.2548
-            ]
-        ],
-        "date": "D:20240420135657+02'00'",
-        "location": [
-            [
-                1334.388,
-                312.7757
-            ],
-            [
-                1233.939,
-                668.7548
-            ]
-        ],
-        "arrow_type": [
-            "/None",
-            "/None"
-        ]
+        "/Subj": "Cloud+",
+        "/Type": "/Annot",
+        "/P": null,
+        "/F": 4,
+        "/C": null,
+        "/CreationDate": "D:20240420135435+02'00'",
+        "/T": "JJanssen",
+        "/Subtype": "/Polygon",
+        "/M": "D:20240420135513+02'00'",
+        "/BE": {
+            "/S": "/C",
+            "/I": 2
+        },
+        "/IT": "/PolygonCloud",
+        "/ITEx": "/PolyText",
+        "/AP": {
+            "/N": null
+        },
+        "/Vertices": null,
+        "/Rect": null,
+        "/NM": "EGQVDPNDTCQEKUEG",
+        "/IRT": null,
+        "/RT": "/Group",
+        "/BS": null
     },
     {
-        "author": "JJanssen",
-        "subtype": "/Line",
-        "bounding_box": [
-            [
-                1324.769,
-                607.1489
-            ],
-            [
-                1469.019,
-                944.4769
-            ]
-        ],
-        "date": "D:20240420135711+02'00'",
-        "location": [
-            [
-                1335.269,
-                617.6489
-            ],
-            [
-                1448.936,
-                933.9769
-            ]
-        ],
-        "arrow_type": [
-            "/None",
-            "/OpenArrow"
-        ]
+        "/Subj": "Cloud+",
+        "/Type": "/Annot",
+        "/P": null,
+        "/F": 4,
+        "/C": null,
+        "/CreationDate": "D:20240420135437+02'00'",
+        "/T": "JJanssen",
+        "/Subtype": "/FreeText",
+        "/BS": {
+            "/W": 0,
+            "/S": "/S",
+            "/Type": "/Border"
+        },
+        "/DA": "1 0 0 rg /ArialMT 18 Tf",
+        "/IT": "/FreeTextCallout",
+        "/ITEx": "/PolyText",
+        "/DS": "font: Arial 18pt; text-align:left; margin:3pt; line-height:20.7pt; color:#FF0000",
+        "/M": "D:20240420135513+02'00'",
+        "/Rotate": 90,
+        "/AP": {
+            "/N": null
+        },
+        "/RD": null,
+        "/CL": null,
+        "/Rect": null,
+        "/NM": "BLQVJMTRNNNEXJRA",
+        "/GroupNesting": null,
+        "/RC": "<?xml version=\"1.0\"?><body xmlns:xfa=\"http://www.xfa.org/schema/xfa-data/1.0/\" xfa:contentType=\"text/html\" xfa:APIVersion=\"BluebeamPDFRevu:2018\" xfa:spec=\"2.2.0\" style=\"font:Arial 18pt; text-align:left; margin:3pt; line-height:20.7pt; color:#FF0000\" xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"line-height:20.7pt; font-size:18pt; font-family:Arial\">Revision cloud with label</p></body>",
+        "/Contents": "Revision cloud with label"
     },
     {
-        "author": "JJanssen",
-        "subtype": "/Line",
-        "bounding_box": [
-            [
-                1309.705,
-                1604.862
-            ],
-            [
-                1354.053,
-                1795.791
-            ]
-        ],
-        "date": "D:20240420135813+02'00'",
-        "location": [
-            [
-                1340.556,
-                1610.362
-            ],
-            [
-                1343.2,
-                1790.114
-            ]
-        ],
-        "arrow_type": [
-            "/ClosedArrow",
-            "/ClosedArrow"
-        ]
+        "/Subj": "Cloud",
+        "/Type": "/Annot",
+        "/P": null,
+        "/F": 4,
+        "/C": null,
+        "/CreationDate": "D:20240420135523+02'00'",
+        "/T": "JJanssen",
+        "/Subtype": "/Polygon",
+        "/M": "D:20240420135529+02'00'",
+        "/BE": {
+            "/S": "/C",
+            "/I": 2
+        },
+        "/IT": "/PolygonCloud",
+        "/AP": {
+            "/N": null
+        },
+        "/Vertices": null,
+        "/Rect": null,
+        "/NM": "KRHFRVODKONZAJUI",
+        "/Popup": null,
+        "/RC": "<?xml version=\"1.0\"?><body xmlns:xfa=\"http://www.xfa.org/schema/xfa-data/1.0/\" xfa:contentType=\"text/html\" xfa:APIVersion=\"BluebeamPDFRevu:2018\" xfa:spec=\"2.2.0\" xmlns=\"http://www.w3.org/1999/xhtml\"><p>Cloud</p></body>",
+        "/Contents": "Cloud"
     },
     {
-        "author": "JJanssen",
-        "subtype": "/Line",
-        "bounding_box": [
-            [
-                1177.698,
-                1517.128
-            ],
-            [
-                1287.901,
-                1646.702
-            ]
-        ],
-        "date": "D:20240420140053+02'00'",
-        "location": [
-            [
-                1282.401,
-                1530.179
-            ],
-            [
-                1192.525,
-                1641.202
-            ]
-        ],
-        "arrow_type": [
-            "/ClosedArrow",
-            "/ClosedArrow"
-        ]
+        "/Type": "/Annot",
+        "/P": null,
+        "/F": 4,
+        "/C": null,
+        "/Subtype": "/Popup",
+        "/NM": "TVXRECSVUMWRNPCZ",
+        "/M": "D:20240420135531+02'00'",
+        "/Parent": null,
+        "/Rect": null
     },
     {
-        "author": "JJanssen",
-        "subtype": "/Line",
-        "bounding_box": [
-            [
-                840.9039,
-                1630.06
-            ],
-            [
-                921.9359,
-                1751.54
-            ]
-        ],
-        "date": "D:20240420140132+02'00'",
-        "location": [
-            [
-                891.4199,
-                1652.16
-            ],
-            [
-                891.4199,
-                1729.44
-            ]
-        ],
-        "arrow_type": [
-            "/ClosedArrow",
-            "/ClosedArrow"
-        ]
+        "/Subj": "Call-out",
+        "/Type": "/Annot",
+        "/P": null,
+        "/F": 4,
+        "/C": null,
+        "/CreationDate": "D:20240420135539+02'00'",
+        "/T": "JJanssen",
+        "/Subtype": "/FreeText",
+        "/BS": {
+            "/W": 2,
+            "/S": "/S",
+            "/Type": "/Border"
+        },
+        "/DA": "0.5019608 0.5019608 1 rg /Helv 16 Tf",
+        "/IT": "/FreeTextCallout",
+        "/DS": "font: Helvetica 16pt; text-align:left; margin:3pt; line-height:18.4pt; color:#FF0000",
+        "/LE": "/OpenArrow",
+        "/M": "D:20240420135609+02'00'",
+        "/Rotate": 90,
+        "/AP": {
+            "/N": null
+        },
+        "/RD": null,
+        "/CL": null,
+        "/Rect": null,
+        "/NM": "YHYAHBGVOBNFAAIH",
+        "/RC": "<?xml version=\"1.0\"?><body xmlns:xfa=\"http://www.xfa.org/schema/xfa-data/1.0/\" xfa:contentType=\"text/html\" xfa:APIVersion=\"BluebeamPDFRevu:2018\" xfa:spec=\"2.2.0\" style=\"font:Helvetica 16pt; text-align:left; margin:3pt; line-height:18.4pt; color:#FF0000\" xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"line-height:18.4pt; font-size:16pt\">Call out with Leader</p></body>",
+        "/Contents": "Call out with Leader"
     },
     {
-        "author": "JJanssen",
-        "subtype": "/Line",
-        "bounding_box": [
-            [
-                795.9102,
-                1722.852
-            ],
-            [
-                878.9421,
-                1813.34
-            ]
-        ],
-        "date": "D:20240420140137+02'00'",
-        "location": [
-            [
-                847.6385,
-                1729.44
-            ],
-            [
-                847.2136,
-                1806.84
-            ]
-        ],
-        "arrow_type": [
-            "/Butt",
-            "/Butt"
-        ]
+        "/Subj": "Approved",
+        "/Type": "/Annot",
+        "/P": null,
+        "/F": 4,
+        "/C": null,
+        "/CreationDate": "D:20240420135650+02'00'",
+        "/T": "JJanssen",
+        "/Subtype": "/Stamp",
+        "/M": "D:20240420135650+02'00'",
+        "/StampPageRotationApplied": null,
+        "/Rect": null,
+        "/AP": {
+            "/N": null
+        },
+        "/SetOpacityFromStampFile": null,
+        "/Name": "/Approved",
+        "/Rotation": 0,
+        "/NM": "TTCIAFXIOGGKBFQL"
+    },
+    {
+        "/Subj": "Line",
+        "/Type": "/Annot",
+        "/P": null,
+        "/F": 4,
+        "/C": null,
+        "/CreationDate": "D:20240420135657+02'00'",
+        "/T": "JJanssen",
+        "/Subtype": "/Line",
+        "/M": "D:20240420135730+02'00'",
+        "/BS": {
+            "/W": 3,
+            "/S": "/D",
+            "/Type": "/Border",
+            "/D": null
+        },
+        "/SlopeType": 0,
+        "/PitchRun": 12,
+        "/L": null,
+        "/AP": {
+            "/N": null
+        },
+        "/Rect": null,
+        "/NM": "OOUKQZVFIYWOMMNT"
+    },
+    {
+        "/Subj": "Arrow",
+        "/Type": "/Annot",
+        "/P": null,
+        "/F": 4,
+        "/C": null,
+        "/CreationDate": "D:20240420135711+02'00'",
+        "/T": "JJanssen",
+        "/Subtype": "/Line",
+        "/M": "D:20240420140035+02'00'",
+        "/BS": {
+            "/W": 6,
+            "/S": "/D",
+            "/Type": "/Border",
+            "/D": null
+        },
+        "/LE": null,
+        "/IC": null,
+        "/SlopeType": 0,
+        "/PitchRun": 12,
+        "/IT": "/LineArrow",
+        "/L": null,
+        "/AP": {
+            "/N": null
+        },
+        "/Rect": null,
+        "/NM": "TORKMLCUIRAYEMEK",
+        "/BM": "/Multiply"
+    },
+    {
+        "/Subj": "Arc",
+        "/Type": "/Annot",
+        "/P": null,
+        "/F": 4,
+        "/C": null,
+        "/CreationDate": "D:20240420135735+02'00'",
+        "/T": "JJanssen",
+        "/Subtype": "/Circle",
+        "/M": "D:20240420135741+02'00'",
+        "/Angle1": 270,
+        "/Angle2": 360,
+        "/AP": {
+            "/N": null
+        },
+        "/IT": "/CircleArc",
+        "/RD": null,
+        "/Rect": null,
+        "/NM": "DIQANHMYQEQKIDWH",
+        "/BS": null
+    },
+    {
+        "/Subj": "PolyLine",
+        "/Type": "/Annot",
+        "/P": null,
+        "/F": 4,
+        "/C": null,
+        "/CreationDate": "D:20240420135759+02'00'",
+        "/T": "JJanssen",
+        "/Subtype": "/PolyLine",
+        "/AP": {
+            "/N": null
+        },
+        "/IC": null,
+        "/M": "D:20240420135807+02'00'",
+        "/Vertices": null,
+        "/Rect": null,
+        "/NM": "DEACUTTHMKVCSHQK",
+        "/BS": null
+    },
+    {
+        "/Subj": "Dimension",
+        "/Type": "/Annot",
+        "/P": null,
+        "/F": 4,
+        "/C": null,
+        "/CreationDate": "D:20240420135813+02'00'",
+        "/T": "JJanssen",
+        "/Subtype": "/Line",
+        "/DS": "font: Helvetica 12pt; text-align:center; line-height:13.8pt; color:#FF0000",
+        "/BS": {
+            "/W": 1,
+            "/S": "/S",
+            "/Type": "/Border"
+        },
+        "/LE": null,
+        "/IC": null,
+        "/LL": 10,
+        "/LLE": 2,
+        "/Cap": null,
+        "/SlopeType": 0,
+        "/PitchRun": 12,
+        "/IT": "/LineDimension",
+        "/M": "D:20240420135821+02'00'",
+        "/L": null,
+        "/AP": {
+            "/N": null
+        },
+        "/Rect": null,
+        "/NM": "EOYFYNCSHYMVPQDU",
+        "/RC": "<?xml version=\"1.0\"?><body xmlns:xfa=\"http://www.xfa.org/schema/xfa-data/1.0/\" xfa:contentType=\"text/html\" xfa:APIVersion=\"BluebeamPDFRevu:2018\" xfa:spec=\"2.2.0\" style=\"font:Helvetica 12pt; text-align:center; line-height:13.8pt; color:#FF0000\" xmlns=\"http://www.w3.org/1999/xhtml\">15.0m</body>",
+        "/Contents": "15.0m"
+    },
+    {
+        "/Subj": "Rectangle",
+        "/Type": "/Annot",
+        "/P": null,
+        "/F": 4,
+        "/C": null,
+        "/CreationDate": "D:20240420135828+02'00'",
+        "/T": "JJanssen",
+        "/Subtype": "/Square",
+        "/M": "D:20240420135838+02'00'",
+        "/AP": {
+            "/N": null
+        },
+        "/RD": null,
+        "/Rect": null,
+        "/NM": "XGPMURCFYRHMDVGY",
+        "/IC": null,
+        "/BS": null
+    },
+    {
+        "/Subj": "Ellipse",
+        "/Type": "/Annot",
+        "/P": null,
+        "/F": 4,
+        "/C": null,
+        "/CreationDate": "D:20240420135843+02'00'",
+        "/T": "JJanssen",
+        "/Subtype": "/Circle",
+        "/M": "D:20240420135846+02'00'",
+        "/AP": {
+            "/N": null
+        },
+        "/RD": null,
+        "/Rect": null,
+        "/NM": "MCUZODUXJDVPZVWS",
+        "/IC": null
+    },
+    {
+        "/Subj": "Polygon",
+        "/Type": "/Annot",
+        "/P": null,
+        "/F": 4,
+        "/C": null,
+        "/CreationDate": "D:20240420135859+02'00'",
+        "/T": "JJanssen",
+        "/Subtype": "/Polygon",
+        "/AP": {
+            "/N": null
+        },
+        "/M": "D:20240420135906+02'00'",
+        "/Vertices": null,
+        "/Rect": null,
+        "/NM": "QAQELIMPFXIUVCBS",
+        "/BS": null,
+        "/IC": null
+    },
+    {
+        "/Subj": "Dimension",
+        "/Type": "/Annot",
+        "/P": null,
+        "/F": 4,
+        "/C": null,
+        "/CreationDate": "D:20240420140053+02'00'",
+        "/T": "JJanssen",
+        "/Subtype": "/Line",
+        "/DS": "font: Helvetica 12pt; text-align:center; line-height:13.8pt; color:#FF0000",
+        "/BS": {
+            "/W": 1,
+            "/S": "/S",
+            "/Type": "/Border"
+        },
+        "/LE": null,
+        "/IC": null,
+        "/LL": 10,
+        "/LLE": 2,
+        "/Cap": null,
+        "/SlopeType": 0,
+        "/PitchRun": 12,
+        "/IT": "/LineDimension",
+        "/M": "D:20240420140102+02'00'",
+        "/L": null,
+        "/AP": {
+            "/N": null
+        },
+        "/Rect": null,
+        "/NM": "QOTXNRWYHVATSTLO",
+        "/RC": "<?xml version=\"1.0\"?><body xmlns:xfa=\"http://www.xfa.org/schema/xfa-data/1.0/\" xfa:contentType=\"text/html\" xfa:APIVersion=\"BluebeamPDFRevu:2018\" xfa:spec=\"2.2.0\" style=\"font:Helvetica 12pt; text-align:center; line-height:13.8pt; color:#FF0000\" xmlns=\"http://www.w3.org/1999/xhtml\">25whatever</body>",
+        "/Contents": "25whatever"
+    },
+    {
+        "/Subj": "Length Measurement",
+        "/Type": "/Annot",
+        "/P": null,
+        "/F": 4,
+        "/C": null,
+        "/CreationDate": "D:20240420140132+02'00'",
+        "/T": "JJanssen",
+        "/Subtype": "/Line",
+        "/DS": "font: Helvetica 12pt; text-align:center; line-height:13.8pt; color:#FF0000",
+        "/BS": {
+            "/W": 1,
+            "/S": "/S",
+            "/Type": "/Border"
+        },
+        "/LE": null,
+        "/IC": null,
+        "/LL": 10,
+        "/LLE": 2,
+        "/Cap": null,
+        "/MeasurementTypes": 130,
+        "/SlopeType": 1,
+        "/PitchRun": 12,
+        "/IT": "/LineDimension",
+        "/Measure": null,
+        "/DepthUnit": null,
+        "/M": "D:20240420140132+02'00'",
+        "/L": null,
+        "/AP": {
+            "/N": null
+        },
+        "/RC": "<?xml version=\"1.0\"?><body xmlns:xfa=\"http://www.xfa.org/schema/xfa-data/1.0/\" xfa:contentType=\"text/html\" xfa:APIVersion=\"BluebeamPDFRevu:2018\" xfa:spec=\"2.2.0\" style=\"font:Helvetica 12pt; text-align:center; line-height:13.8pt; color:#FF0000\" xmlns=\"http://www.w3.org/1999/xhtml\">3,000.00 mm</body>",
+        "/Label": "",
+        "/Rect": null,
+        "/Contents": "3,000.00 mm",
+        "/NM": "HQTZGODQIUIJUSZV"
+    },
+    {
+        "/Subj": "Length Measurement",
+        "/Type": "/Annot",
+        "/P": null,
+        "/F": 4,
+        "/C": null,
+        "/CreationDate": "D:20240420140137+02'00'",
+        "/T": "JJanssen",
+        "/Subtype": "/Line",
+        "/DS": "font: Helvetica 12pt; text-align:center; line-height:13.8pt; color:#FF0000",
+        "/BS": {
+            "/W": 2,
+            "/S": "/S",
+            "/Type": "/Border"
+        },
+        "/LE": null,
+        "/IC": null,
+        "/LL": 10,
+        "/LLE": 2,
+        "/Cap": null,
+        "/MeasurementTypes": 130,
+        "/SlopeType": 1,
+        "/PitchRun": 12,
+        "/IT": "/LineDimension",
+        "/Measure": null,
+        "/DepthUnit": null,
+        "/M": "D:20240420140154+02'00'",
+        "/L": null,
+        "/AP": {
+            "/N": null
+        },
+        "/RC": "<?xml version=\"1.0\"?><body xmlns:xfa=\"http://www.xfa.org/schema/xfa-data/1.0/\" xfa:contentType=\"text/html\" xfa:APIVersion=\"BluebeamPDFRevu:2018\" xfa:spec=\"2.2.0\" style=\"font:Helvetica 12pt; text-align:center; line-height:13.8pt; color:#FF0000\" xmlns=\"http://www.w3.org/1999/xhtml\"><p>3,004.71 mm</p></body>",
+        "/Label": "",
+        "/Rect": null,
+        "/Contents": "3,004.71 mm",
+        "/NM": "UKRPXPKLQLAQVZAX"
+    },
+    {
+        "/Subj": "Area Measurement",
+        "/Type": "/Annot",
+        "/P": null,
+        "/F": 4,
+        "/C": null,
+        "/CreationDate": "D:20240420140209+02'00'",
+        "/T": "JJanssen",
+        "/FillOpacity": 1,
+        "/Subtype": "/Polygon",
+        "/Measure": null,
+        "/M": "D:20240420140209+02'00'",
+        "/DS": "font: Helvetica 12pt; text-align:center; line-height:13.8pt; color:#FF0000",
+        "/Cap": null,
+        "/AlignOnSegment": null,
+        "/MeasurementTypes": 129,
+        "/SlopeType": 1,
+        "/PitchRun": 12,
+        "/IT": "/PolygonDimension",
+        "/DepthUnit": null,
+        "/AP": {
+            "/N": null
+        },
+        "/Vertices": null,
+        "/RC": "<?xml version=\"1.0\"?><body xmlns:xfa=\"http://www.xfa.org/schema/xfa-data/1.0/\" xfa:contentType=\"text/html\" xfa:APIVersion=\"BluebeamPDFRevu:2018\" xfa:spec=\"2.2.0\" style=\"font:Helvetica 12pt; text-align:center; line-height:13.8pt; color:#FF0000\" xmlns=\"http://www.w3.org/1999/xhtml\">16.79 sq m</body>",
+        "/Label": "",
+        "/Rect": null,
+        "/Contents": "16.79 sq m",
+        "/NM": "UAOGVUSFQNQFSRCA"
+    },
+    {
+        "/Subj": "Polylength Measurement",
+        "/Type": "/Annot",
+        "/P": null,
+        "/F": 4,
+        "/C": null,
+        "/CreationDate": "D:20240420140219+02'00'",
+        "/T": "JJanssen",
+        "/Subtype": "/PolyLine",
+        "/Measure": null,
+        "/IC": null,
+        "/M": "D:20240420140219+02'00'",
+        "/RiseDrop": 0,
+        "/DS": "font: Helvetica 12pt; text-align:center; line-height:13.8pt; color:#FF0000",
+        "/Cap": null,
+        "/AlignOnSegment": null,
+        "/MeasurementTypes": 130,
+        "/IT": "/PolyLineDimension",
+        "/DepthUnit": null,
+        "/AP": {
+            "/N": null
+        },
+        "/Vertices": null,
+        "/RC": "<?xml version=\"1.0\"?><body xmlns:xfa=\"http://www.xfa.org/schema/xfa-data/1.0/\" xfa:contentType=\"text/html\" xfa:APIVersion=\"BluebeamPDFRevu:2018\" xfa:spec=\"2.2.0\" style=\"font:Helvetica 12pt; text-align:center; line-height:13.8pt; color:#FF0000\" xmlns=\"http://www.w3.org/1999/xhtml\">14,107.79 mm</body>",
+        "/Label": "",
+        "/Rect": null,
+        "/Contents": "14,107.79 mm",
+        "/NM": "LMWOWJWLHQRPYIKV"
+    },
+    {
+        "/Subj": "Diameter Measurement",
+        "/Type": "/Annot",
+        "/P": null,
+        "/F": 4,
+        "/C": null,
+        "/CreationDate": "D:20240420140229+02'00'",
+        "/T": "JJanssen",
+        "/Subtype": "/Circle",
+        "/M": "D:20240420140229+02'00'",
+        "/DS": "font: Helvetica 12pt; text-align:center; line-height:13.8pt; color:#FF0000",
+        "/Cap": null,
+        "/MeasurementTypes": 384,
+        "/IT": "/CircleDimension",
+        "/Measure": null,
+        "/DepthUnit": null,
+        "/RD": null,
+        "/AP": {
+            "/N": null
+        },
+        "/RC": "<?xml version=\"1.0\"?><body xmlns:xfa=\"http://www.xfa.org/schema/xfa-data/1.0/\" xfa:contentType=\"text/html\" xfa:APIVersion=\"BluebeamPDFRevu:2018\" xfa:spec=\"2.2.0\" style=\"font:Helvetica 12pt; text-align:center; line-height:13.8pt; color:#FF0000\" xmlns=\"http://www.w3.org/1999/xhtml\">2,688.81 mm</body>",
+        "/Label": "",
+        "/Rect": null,
+        "/Contents": "2,688.81 mm",
+        "/NM": "AJXUAZWBGHMLFHJD"
+    },
+    {
+        "/Subj": "Angle Measurement",
+        "/Type": "/Annot",
+        "/P": null,
+        "/F": 4,
+        "/C": null,
+        "/CreationDate": "D:20240420140235+02'00'",
+        "/T": "JJanssen",
+        "/Subtype": "/PolyLine",
+        "/Measure": null,
+        "/IC": null,
+        "/M": "D:20240420140235+02'00'",
+        "/DS": "font: Helvetica 12pt; text-align:center; line-height:13.8pt; color:#FF0000",
+        "/Cap": null,
+        "/MeasurementTypes": 1152,
+        "/IT": "/PolyLineAngle",
+        "/AP": {
+            "/N": null
+        },
+        "/Vertices": null,
+        "/RC": "<?xml version=\"1.0\"?><body xmlns:xfa=\"http://www.xfa.org/schema/xfa-data/1.0/\" xfa:contentType=\"text/html\" xfa:APIVersion=\"BluebeamPDFRevu:2018\" xfa:spec=\"2.2.0\" style=\"font:Helvetica 12pt; text-align:center; line-height:13.8pt; color:#FF0000\" xmlns=\"http://www.w3.org/1999/xhtml\">40.12\u00b0</body>",
+        "/Label": "",
+        "/Rect": null,
+        "/Contents": "40.12\u00b0",
+        "/NM": "ZPGODYMPMQDMAVTK"
+    },
+    {
+        "/Subj": "Radius Measurement",
+        "/Type": "/Annot",
+        "/P": null,
+        "/F": 4,
+        "/C": null,
+        "/CreationDate": "D:20240420140243+02'00'",
+        "/T": "JJanssen",
+        "/Subtype": "/Polygon",
+        "/Measure": null,
+        "/M": "D:20240420140243+02'00'",
+        "/DS": "font: Helvetica 12pt; text-align:center; line-height:13.8pt; color:#FF0000",
+        "/Cap": null,
+        "/MeasurementTypes": 130,
+        "/IT": "/PolygonRadius",
+        "/AP": {
+            "/N": null
+        },
+        "/Vertices": null,
+        "/RC": "<?xml version=\"1.0\"?><body xmlns:xfa=\"http://www.xfa.org/schema/xfa-data/1.0/\" xfa:contentType=\"text/html\" xfa:APIVersion=\"BluebeamPDFRevu:2018\" xfa:spec=\"2.2.0\" style=\"font:Helvetica 12pt; text-align:center; line-height:13.8pt; color:#FF0000\" xmlns=\"http://www.w3.org/1999/xhtml\">2,154.58 mm</body>",
+        "/Label": "",
+        "/Rect": null,
+        "/Contents": "2,154.58 mm",
+        "/NM": "WCFFDMXXASGOAREW"
+    },
+    {
+        "/Subj": "Rectangle",
+        "/Type": "/Annot",
+        "/P": null,
+        "/F": 4,
+        "/C": null,
+        "/CreationDate": "D:20240420140347+02'00'",
+        "/T": "JJanssen",
+        "/Subtype": "/Square",
+        "/Rect": null,
+        "/IC": null,
+        "/RD": null,
+        "/M": "D:20240420140407+02'00'",
+        "/BS": {
+            "/W": 1.25,
+            "/S": "/S",
+            "/Type": "/Border"
+        },
+        "/AP": {
+            "/N": null
+        },
+        "/NM": "VFZMRTMCDICIFNDG",
+        "/Pattern": null,
+        "/PatternName": "Diagonal Down (Small)",
+        "/PatternColor": null
     }
 ]
