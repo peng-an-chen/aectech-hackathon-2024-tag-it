@@ -82,10 +82,7 @@ class PDFChangeHandler(FileSystemEventHandler):
                 f.write(export_json)
             
             with connect("ws://localhost:8000") as websocket:
-                try:
-                    websocket.send(export_json)
-                except ConnectionClosedOK:
-                    print("Connection closed")
+                websocket.send(export_json)
                 
 
             print("Processed annotations written to 'annotations.json'.")

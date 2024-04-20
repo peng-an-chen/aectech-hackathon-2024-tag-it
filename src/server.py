@@ -1,38 +1,30 @@
 import asyncio
 import websockets
 
-class WebSocketServer:
-  def __init__(self, host, port):
-    self.host = host
-    self.port = port
-    self.clients = set()
+# Store all connected clients
+connected_clients = set()
 
-  async def handle_client(self, websocket, path):
-    self.clients.add(websocket)
-    try:
-      while True:
-        message = await websocket.recv()
-        print(f"[SERVER] Received message: {message}")
-        # Handle incoming messages from clients if needed
-    finally:
-      self.clients.remove(websocket)
+async def echo(websocket, path):
+  # Add the new client to the set of connected clients
+  connected_clients.add(websocket)
+  print("Connected")
 
-  async def send_message(self, message):
-    if self.clients:
-      await asyncio.wait([client.send(message) for client in self.clients])
+  try:
+    async for message in websocket:
+      print(f"Received message: {message}")
+      # Send the message to all connected clients except the sender
+      for client in connected_clients:
+        if client != websocket:
+          await client.send(message)
+  except websockets.exceptions.ConnectionClosedOK:
+    print("Connection closed")
+  finally:
+    # Remove the client from the set of connected clients
+    connected_clients.remove(websocket)
 
-  async def start(self):
-    server = await websockets.serve(self.handle_client, self.host, self.port)
-    await server.wait_closed()
+async def main():
+  async with websockets.serve(echo, "localhost", 8000):
+    print("Server started")
+    await asyncio.Future()  # run forever
 
-# Example usage
-if __name__ == "__main__":
-  server = WebSocketServer("localhost", 8000)
-  print("Starting server on port 8000...")
-  asyncio.run(server.start())
-
-def createServer():
-  server = WebSocketServer("localhost", 8000)
-  print("Starting server on port 8000...")
-  asyncio.run(server.start())
-  return server
+asyncio.run(main())
