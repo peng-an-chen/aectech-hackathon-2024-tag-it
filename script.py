@@ -2,7 +2,16 @@ import json
 import time
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
-from PyPDF2 import PdfReader
+from pypdf import PdfReader
+
+def remapLocations(pageMediaBox, location):
+    x1, y1 = location[0]
+    x2, y2 = location[1]
+    x1 = x1 / pageMediaBox[2]
+    x2 = x2 / pageMediaBox[2]
+    y1 = y1 / pageMediaBox[3]
+    y2 = y2 / pageMediaBox[3]
+    return [[x1, y1], [x2, y2]]
 
 class PDFChangeHandler(FileSystemEventHandler):
     def __init__(self, filename):
@@ -29,18 +38,20 @@ class PDFChangeHandler(FileSystemEventHandler):
             annotations_export = []
 
             for page in reader.pages:
+                pageMediaBox = reader.pages[0].mediabox
                 if "/Annots" in page:
                     for annot in page["/Annots"]:
                         obj = annot.get_object()
                         subtype = obj["/Subtype"]
                         x1, y1, x2, y2 = obj["/Rect"]
+                        remapped_location = remapLocations(pageMediaBox, [[x1, y1], [x2, y2]])
                         location = [[float(x1), float(y1)], [float(x2), float(y2)]]
 
                         if subtype in ["/Text", "/FreeText"]:
                             annotation = {
                                 "subtype": obj["/Subtype"],
                                 "content": obj.get("/Contents", ""),
-                                "location": location if subtype == "/FreeText" else None
+                                "location": remapped_location if subtype == "/FreeText" else None
                             }
                             annotations_export.append(annotation)
                         elif subtype == "/Highlight":
