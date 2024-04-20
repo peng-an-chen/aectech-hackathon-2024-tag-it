@@ -1,0 +1,90 @@
+[
+    {
+      "subtype": "/FreeText",
+      "content": "EXTEND UPPER PORTION OF THE WALL FOR PROJECTION",
+      "location": [
+        [2420.584, 2832.931],
+        [2481.984, 2945.651]
+      ]
+    },
+    {
+      "subtype": "/FreeText",
+      "content": "641",
+      "location": [
+        [708.4956, 1508.543],
+        [725.4956, 1539.626]
+      ]
+    },
+    {
+      "subtype": "/FreeText",
+      "content": "1372",
+      "location": [
+        [368.3328, 2425.491],
+        [385.3328, 2461.454]
+      ]
+    },
+    {
+      "subtype": "/FreeText",
+      "content": "7756",
+      "location": [
+        [368.929, 2549.871],
+        [385.929, 2585.833]
+      ]
+    },
+    {
+      "subtype": "/FreeText",
+      "content": "EDGE OF SLAB, FILL GAPS AROUND CONDUITS WITH ROXUL INSULATION AND TOP WITH LIQUID APPLIED SEALANT",
+      "location": [
+        [766.8638, 1655.315],
+        [1004.989, 1942.038]
+      ]
+    },
+    {
+      "subtype": "/FreeText",
+      "content": "NOTE: PROVIDE PARTITION BELOW RAISED FLOOR ACROSS AV ROOM B1402D\r2x16mm DENSGLASS\r152mm METAL STUDS FILLED W/\r150mm ACOUSTICAL INSULATION\r-SEAL EDGES OF WALL TO CONCRETE STRUCTURE ADN PROVIDE DECK CLOSURE TO U/S METAL DECK",
+      "location": [
+        [1127.819, 1474.973],
+        [1206.919, 1757.021]
+      ]
+    },
+    {
+      "subtype": "/FreeText",
+      "content": "STEP IN FOUNDATION WALL BELOW",
+      "location": [
+        [896.9899, 1263.172],
+        [989.9146, 1365.526]
+      ]
+    },
+    {
+      "subtype": "/FreeText",
+      "content": "P9.4",
+      "location": [
+        [1026.212, 1716.06],
+        [1043.212, 1749.131]
+      ]
+    },
+    {
+      "subtype": "/FreeText",
+      "content": "RFI 338",
+      "location": [
+        [1200.675, 1476.023],
+        [1218.769, 1521.549]
+      ]
+    },
+    {
+      "subtype": "/FreeText",
+      "content": "why is this here?",
+      "location": [
+        [2136.059, 3079.465],
+        [2165.059, 3229.206]
+      ]
+    },
+    {
+      "subtype": "/FreeText",
+      "content": "Unclear what this is dimensioning to.",
+      "location": [
+        [962.0992, 590.569],
+        [1034.924, 868.3701]
+      ]
+    }
+  ]
