@@ -166,6 +166,7 @@ namespace Tag_it.Revit
                                     newMapping.SelectedSheetName = newMapping.SheetNames.FirstOrDefault();
                                     ui.SheetMappings.Add(newMapping);
                                 }
+                                ui.RaisePropertyChanged("SheetMappings");
                             }
                         }
                         

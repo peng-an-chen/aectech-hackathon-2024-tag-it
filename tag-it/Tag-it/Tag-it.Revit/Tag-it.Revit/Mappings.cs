@@ -20,5 +20,11 @@ namespace Tag_it.Revit
         {
             SelectedSheetName = SheetNames.FirstOrDefault();
         }
+        public Mappings(string sheetName, List<string> sheetNames)
+        {
+            SheetName = sheetName;
+            SheetNames = sheetNames;
+            SelectedSheetName = SheetNames.FirstOrDefault();
+        }
     }
 }

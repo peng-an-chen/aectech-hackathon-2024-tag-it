@@ -15,14 +15,22 @@ using System.Windows.Shapes;
 using Autodesk.Revit.UI;
 using Autodesk.Revit.DB;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
+using PropertyChanged;
 
 namespace Tag_it.Revit
 {
     /// <summary>
     /// Interaction logic for UI.xaml
     /// </summary>
-    public partial class Ui : Window
+    [AddINotifyPropertyChangedInterface]
+    public partial class Ui : Window, INotifyPropertyChanged
     {
+        /// <summary>
+        /// The event that fires when any child property changes its value
+        /// </summary>
+        public event PropertyChangedEventHandler PropertyChanged = (sender, e) => { };
+
         private readonly Document _doc;
 
         //private readonly UIApplication _uiApp;
@@ -33,7 +41,11 @@ namespace Tag_it.Revit
         private readonly EventHandlerWithWpfArg _mExternalMethodWpfArg;
 
         public string MarkupFolder = string.Empty;
-        public ObservableCollection<Mappings> SheetMappings = new ObservableCollection<Mappings>();
+        public ObservableCollection<Mappings> SheetMappings = new ObservableCollection<Mappings>() { new Mappings("sheet1", new List<string>() { "sheet", "anothersheet" }), new Mappings("sheet1", new List<string>() { "sheet", "anothersheet" }) };
+
+        public string NameSheet = "A102 Plans";
+        public static List<string> Names = new List<string>() { "A001 Title Sheet", "A101 Site Plan", "A102 Plans", "A103 Elevations/Sections", "A104 Elev./Sec./Det.", "A105 Elev./ Stair Sections" };
+        public string SelectedName = Names.FirstOrDefault();
 
         public Ui(UIApplication uiApp, EventHandlerWithStringArg evExternalMethodStringArg,
             EventHandlerWithWpfArg eExternalMethodWpfArg)
@@ -43,6 +55,23 @@ namespace Tag_it.Revit
             //_app = _doc.Application;
             //_uiApp = _doc.Application;
             Closed += MainWindow_Closed;
+
+            Mappings newMapping = new Mappings();
+            
+            string sheetName = "Sheet 1";
+
+            if (!string.IsNullOrEmpty(sheetName))
+            {
+                newMapping.SheetName = sheetName;
+                for (int i = 0; i < 3; i++)
+                {
+                    newMapping.SheetNames.Add("Sheet A" + (i+1).ToString());
+                }
+
+                newMapping.SelectedSheetName = newMapping.SheetNames.FirstOrDefault();
+                SheetMappings.Add(newMapping);
+            }
+            RaisePropertyChanged("SheetMappings");
 
             InitializeComponent();
             _mExternalMethodStringArg = evExternalMethodStringArg;
@@ -69,6 +98,10 @@ namespace Tag_it.Revit
             Methods.SelectFolder(this, _doc);
             Methods.LoadAnnotations(this, _doc);
             UserAlert();
+        }
+
+        private void MapMarkupCommand_Click(object sender, RoutedEventArgs e)
+        {
         }
 
         #endregion
@@ -118,5 +151,12 @@ namespace Tag_it.Revit
         }
 
         #endregion
+        public void RaisePropertyChanged(string propertyName)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
     }
 }

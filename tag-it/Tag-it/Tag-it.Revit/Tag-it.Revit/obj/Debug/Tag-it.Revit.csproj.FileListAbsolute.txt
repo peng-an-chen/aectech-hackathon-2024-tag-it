@@ -90,3 +90,6 @@ C:\Users\JJanssen\Documents\GitHub\aectech-hackathon-2024-tag-it\tag-it\Tag-it\T
 C:\Users\JJanssen\Documents\GitHub\aectech-hackathon-2024-tag-it\tag-it\Tag-it\Tag-it.Revit\Tag-it.Revit\bin\Debug\Tag-it.Revit.addin
 C:\Users\JJanssen\Documents\GitHub\aectech-hackathon-2024-tag-it\tag-it\Tag-it\Tag-it.Revit\Tag-it.Revit\bin\Debug\Newtonsoft.Json.dll
 C:\Users\JJanssen\Documents\GitHub\aectech-hackathon-2024-tag-it\tag-it\Tag-it\Tag-it.Revit\Tag-it.Revit\bin\Debug\Newtonsoft.Json.xml
+C:\Users\JJanssen\Documents\GitHub\aectech-hackathon-2024-tag-it\tag-it\Tag-it\Tag-it.Revit\Tag-it.Revit\obj\Debug\Tag-it.Revit.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JJanssen\Documents\GitHub\aectech-hackathon-2024-tag-it\tag-it\Tag-it\Tag-it.Revit\Tag-it.Revit\obj\Debug\Tag-it.Revit.csproj.Fody.CopyLocal.cache
+C:\Users\JJanssen\Documents\GitHub\aectech-hackathon-2024-tag-it\tag-it\Tag-it\Tag-it.Revit\Tag-it.Revit\obj\Debug\Tag-it.Revit.csproj.Fody.RuntimeCopyLocal.cache
