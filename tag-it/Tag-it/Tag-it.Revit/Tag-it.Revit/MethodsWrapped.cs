@@ -47,13 +47,13 @@ namespace Tag_it.Revit
             Document doc = uiDoc.Document;
 
             bool cbDocumentDataIsChecked = false;
-            ui.Dispatcher.Invoke(() => cbDocumentDataIsChecked = ui.CbDocumentData.IsChecked.GetValueOrDefault());
+            //ui.Dispatcher.Invoke(() => cbDocumentDataIsChecked = ui.CbDocumentData.IsChecked.GetValueOrDefault());
 
             bool cbSheetDataIsChecked = false;
-            ui.Dispatcher.Invoke(() => cbSheetDataIsChecked = ui.CbSheetData.IsChecked.GetValueOrDefault());
+            //ui.Dispatcher.Invoke(() => cbSheetDataIsChecked = ui.CbSheetData.IsChecked.GetValueOrDefault());
 
             bool cbWallDataIsChecked = false;
-            ui.Dispatcher.Invoke(() => cbWallDataIsChecked = ui.CbWallData.IsChecked.GetValueOrDefault());
+            //ui.Dispatcher.Invoke(() => cbWallDataIsChecked = ui.CbWallData.IsChecked.GetValueOrDefault());
 
             // METHODS
             if (cbDocumentDataIsChecked)

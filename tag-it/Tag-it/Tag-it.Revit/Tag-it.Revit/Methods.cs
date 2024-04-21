@@ -1,9 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using Autodesk.Revit.DB;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace Tag_it.Revit
 {
@@ -121,6 +125,100 @@ namespace Tag_it.Revit
                 ui.Dispatcher.Invoke(() =>
                     ui.TbDebug.Text += "\n" + (DateTime.Now).ToLongTimeString() + "\t" + message);
             });
+        }
+        /// <summary>
+        /// Check the specified folder and load the annotations. 
+        /// </summary>
+        /// <param name="ui">An instance of our UI class, which in this template is the main WPF
+        /// window of the application.</param>
+        /// <param name="doc">The current Revit Document</param>
+        [STAThread]
+        public static void LoadAnnotations(Ui ui, Document doc)
+        {
+            if (doc.IsValidObject)
+            {
+                Task.Run(() =>
+                {
+                    Util.LogThreadInfo("Load Annotations from folder");
+
+                    if (Directory.Exists(ui.MarkupFolder))
+                    {
+                        string[] files = Directory.GetFiles(ui.MarkupFolder);
+
+                        for (int i = 0; i < files.Length; i++)
+                        {
+                            string file = files[i];
+                            if (file.Contains("annotations") && file.EndsWith(".json"))
+                            {
+                                Mappings newMapping = new Mappings();
+                                newMapping.AnnotationJson = file;
+                                string sheetName = "";
+                                ReadAnnotationsFile(file, ref sheetName);
+                                if (!string.IsNullOrEmpty(sheetName))
+                                {
+                                    newMapping.SheetName = sheetName;
+                                    List<ViewSheet> sheets = GetSheets(doc).Result;
+                                    newMapping.RevitSheets = sheets;
+                                    foreach (var sheet in sheets)
+                                    {
+                                        newMapping.SheetNames.Add(sheet.Title);
+                                    }                                    
+                                    newMapping.SelectedSheetName = newMapping.SheetNames.FirstOrDefault();
+                                    ui.SheetMappings.Add(newMapping);
+                                }
+                                ui.RaisePropertyChanged("SheetMappings");
+                            }
+                        }
+                        
+                    }
+
+                });
+            }
+        }
+        /// <summary>
+        /// Select the folder that contains the annotated PDF Mark-ups.
+        /// </summary>
+        /// <param name="ui">An instance of our UI class, which in this template is the main WPF
+        /// window of the application.</param>
+        /// <param name="doc">The current Revit Document</param>
+        public static void SelectFolder(Ui ui, Document doc)
+        {
+            if (doc.IsValidObject)
+            {
+                Util.LogThreadInfo("Load Markup Folder");
+
+                FolderBrowserDialog folder = new FolderBrowserDialog();
+                // Set the help text description for the FolderBrowserDialog.
+                folder.Description = "Select the directory that contains the PDF Mark-ups to use";
+
+                // Do not allow the user to create new files via the FolderBrowserDialog.
+                folder.ShowNewFolderButton = false;
+
+                // Default to the My Documents folder.
+                folder.RootFolder = Environment.SpecialFolder.Desktop;
+
+                // Show the FolderBrowserDialog.
+                DialogResult result = folder.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    ui.MarkupFolder = folder.SelectedPath;
+                }
+            }
+        }
+        private static void ReadAnnotationsFile(string file, ref string sheetName)
+        {
+            // read JSON directly from a file
+            using (StreamReader jsonFile = File.OpenText(file))
+            using (JsonTextReader reader = new JsonTextReader(jsonFile))
+            {
+                JObject o2 = (JObject)JToken.ReadFrom(reader);
+
+                if(o2.ContainsKey("sheetName"))
+                {
+                    sheetName = o2.GetValue("sheetName").ToString();
+                }
+         
+            }
         }
     }
 }

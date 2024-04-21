@@ -4,7 +4,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008" x:Class="Tag_it.Revit.Ui"
     mc:Ignorable="d"
-    Title="Template Application" Height="319.416" Width="668.137" WindowStartupLocation="CenterScreen"
+    Title="Tag it! - AECTech Barcelona Hackathon" Height="319.416" Width="668.137" WindowStartupLocation="CenterScreen"
     Background="White"
     Foreground="Gray" FontSize="12"
     Name="DebugUtility" Icon="Resources/revit-wire.ico">
@@ -23,7 +23,7 @@
         <Border BorderBrush="#FFACACAC" BorderThickness="1" Height="32" VerticalAlignment="Top" Margin="0,0,0.2,0" Grid.ColumnSpan="2" />
 
         <!-- MAIN TAB CONTROLS-->
-        <TabControl Margin="96.019,37,29.2,25.4" Grid.Row="0" Grid.RowSpan="2" Grid.Column="1">
+        <TabControl Margin="280,37,29.2,125.4" Grid.Row="0" Grid.RowSpan="2" Grid.Column="1">
             <TabItem x:Name="TabDebug" Padding="5,0,5,0">
                 <TabItem.Header>
                     <StackPanel Orientation="Horizontal">
@@ -33,13 +33,17 @@
                     </StackPanel>
                 </TabItem.Header>
                 <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
                     <ScrollViewer VerticalScrollBarVisibility="Auto" BorderThickness="0" BorderBrush="{x:Null}">
                         <TextBox x:Name="TbDebug" FontFamily="Consolas" Margin="0" TextWrapping="Wrap" Text=""
                                  BorderThickness="0" BorderBrush="{x:Null}" />
                     </ScrollViewer>
                 </Grid>
             </TabItem>
-            <TabItem x:Name="TabCode" Padding="5,0,5,0">
+            <!--<TabItem x:Name="TabCode" Padding="5,0,5,0">
                 <TabItem.Header>
                     <StackPanel Orientation="Horizontal">
                         <Image Source="Resources/terminal.png" VerticalAlignment="Center" HorizontalAlignment="Center"
@@ -53,8 +57,8 @@
                                  BorderThickness="0" BorderBrush="{x:Null}" />
                     </ScrollViewer>
                 </Grid>
-            </TabItem>
-            <TabItem x:Name="TabTest" Padding="5,0,5,0">
+            </TabItem>-->
+            <!--<TabItem x:Name="TabTest" Padding="5,0,5,0">
                 <TabItem.Header>
                     <StackPanel Orientation="Horizontal">
                         <Image Source="Resources/cloud-small.png" VerticalAlignment="Center"
@@ -84,8 +88,8 @@
                     <TextBox x:Name="TbCollectionViewport" HorizontalAlignment="Left" Height="21" Margin="11,120,0,0"
                              TextWrapping="Wrap" Text="ViewportData" VerticalAlignment="Top" Width="105" />
                 </Grid>
-            </TabItem>
-            <TabItem x:Name="TabWip" Padding="5,0,5,0">
+            </TabItem>-->
+            <!--<TabItem x:Name="TabWip" Padding="5,0,5,0">
                 <TabItem.Header>
                     <StackPanel Orientation="Horizontal">
                         <Image Source="Resources/flask.png" VerticalAlignment="Center" HorizontalAlignment="Center"
@@ -94,128 +98,89 @@
                     </StackPanel>
                 </TabItem.Header>
                 <Grid />
-            </TabItem>
+            </TabItem>-->
         </TabControl>
-        <TabControl HorizontalAlignment="Left" Width="223" BorderBrush="{x:Null}" Background="{x:Null}"
+        <TabControl HorizontalAlignment="Left" Width="400" BorderBrush="{x:Null}" Background="{x:Null}"
                     Grid.Row="0" Grid.RowSpan="2" Margin="0,0,0,25.4" Grid.ColumnSpan="2">
-            <TabItem x:Name="TbTest" BorderBrush="{x:Null}" Background="{x:Null}" Margin="-2,-2,2,-2.333"
-                     HorizontalAlignment="Right" Width="58" Padding="5,0,5,0">
-                <TabItem.Header>
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="Resources/stethoscope.png" VerticalAlignment="Center"
-                               HorizontalAlignment="Center" Height="14" />
-                        <Label Content="Test" />
-                    </StackPanel>
-                </TabItem.Header>
-                <Grid>
-                    <Button x:Name="BExtString" BorderBrush="#FFABADB3" Background="{x:Null}" Padding="5,0,5,0"
-                            Click="BExtString_Click" HorizontalAlignment="Left" Width="183" Height="25"
-                            VerticalAlignment="Top" Margin="10,10,0,0">
-                        <Button.ToolTip>
-                            <ToolTip>
-                                <StackPanel>
-                                    <TextBlock>
-                                        <Run Text="Simple sample method to test." />
-                                    </TextBlock>
-                                </StackPanel>
-                            </ToolTip>
-                        </Button.ToolTip>
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="External Method + String Arg" Margin="5,0,0,0" />
-                        </StackPanel>
-                    </Button>
-                </Grid>
-            </TabItem>
             <TabItem x:Name="TbExport" BorderBrush="{x:Null}" Background="{x:Null}" Margin="-3,-2,-1,-2"
                      Padding="5,0,5,0">
                 <TabItem.Header>
                     <StackPanel Orientation="Horizontal">
                         <Image Source="Resources/chevron-right.png" VerticalAlignment="Center"
                                HorizontalAlignment="Center" Height="14" />
-                        <Label Content="Export" />
+                        <Label Content="Select and map views" />
                     </StackPanel>
                 </TabItem.Header>
-                <Grid>
+                <StackPanel>
+                    <Button x:Name="SelectFolderCommand" BorderBrush="#FFABADB3" Background="{x:Null}" Padding="5,0,5,0"
+                            Click="SelectFolderCommand_Click" HorizontalAlignment="Left" Width="183" Height="26"
+                            VerticalAlignment="Top" Margin="8,16,0,0" Grid.ColumnSpan="2">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Select Mark-up Folder to Load" Margin="5,0,0,0" />
+                        </StackPanel>
+                    </Button>
+
+                    <Border BorderThickness="1" BorderBrush="#FFABADB3" Margin="8">
+                        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+                            <!--<ListBox Name="SheetMapper" ItemsSource="{Binding Source=SheetMappings}" Margin="0,8,0,0" Height="150">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>-->
+                            <StackPanel Orientation="Vertical">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Annotated Plans:" FontWeight="Bold" MinHeight="20" Margin="3" MinWidth="120"/>
+                                    <TextBlock Text="Sheets in your model:" FontWeight="Bold" MinHeight="20" Margin="3" MinWidth="200"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Margin="0,6,0,6">
+                                    <TextBlock Text="A102 Plans" MinHeight="20" Margin="3" MinWidth="110"/>
+                                    <ComboBox ItemsSource="{Binding Names}" Margin="12,0" MinWidth="200" SelectedItem="{Binding Path=SelectedName}"></ComboBox>
+                                </StackPanel>
+                            </StackPanel>
+                            <!--<Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="150"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Label Grid.Column="0" Content="{Binding SheetName}" Height="50" Background="Black"/>
+                                        <ComboBox Grid.Column="1" ItemsSource="{Binding SheetNames}" Height="50" SelectedItem="{Binding SelectedSheetName}">
+                                            <ComboBox.ItemTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="{Binding Path=.}" />
+                                                </DataTemplate>
+                                            </ComboBox.ItemTemplate>
+                                        </ComboBox>
+
+                                    </Grid>-->
+                            <!--</DataTemplate>
+                            </ListBox.ItemTemplate>
+
+                        </ListBox>-->
+                        </ScrollViewer>
+                    </Border>
+
+                </StackPanel>
+                <!--<Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="32*" />
                         <ColumnDefinition Width="171*" />
                     </Grid.ColumnDefinitions>
-                    <Button x:Name="BExternalMethod1" BorderBrush="#FFABADB3" Background="{x:Null}" Padding="5,0,5,0"
-                            Click="BExternalMethod1_Click" HorizontalAlignment="Left" Width="183" Height="26"
-                            VerticalAlignment="Top" Margin="11,40,0,0" Grid.ColumnSpan="2">
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="External Method + WPF Arg" Margin="5,0,0,0" />
-                        </StackPanel>
-                    </Button>
-                    <CheckBox x:Name="CbDocumentData" Content="Project" HorizontalAlignment="Left" Margin="9,10,0,0"
+                    
+                    --><!--<CheckBox x:Name="CbDocumentData" Content="Project" HorizontalAlignment="Left" Margin="9,10,0,0"
                               VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.Column="0" />
                     <CheckBox x:Name="CbWallData" Content="Walls" HorizontalAlignment="Left" Margin="47,10,0,0"
                               VerticalAlignment="Top" Grid.Column="1" />
                     <CheckBox x:Name="CbSheetData" Content="Sheet" HorizontalAlignment="Left" Margin="111,10,0,0"
-                              VerticalAlignment="Top" Grid.Column="1" />
-                </Grid>
-            </TabItem>
-            <TabItem x:Name="TbProjects" BorderBrush="{x:Null}" Background="{x:Null}" Margin="0,-2,-4,-2"
-                     Padding="5,0,5,0">
-                <TabItem.Header>
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="Resources/building.png" VerticalAlignment="Center" HorizontalAlignment="Center"
-                               Height="13" />
-                        <Label Content="Project" />
-                    </StackPanel>
-                </TabItem.Header>
-                <Grid>
-                    <Button x:Name="NonExternal1" BorderBrush="#FFABADB3" Background="{x:Null}" Padding="5,0,5,0"
-                            Click="BNonExternal1_Click" HorizontalAlignment="Left" Width="183" Height="25"
-                            VerticalAlignment="Top" Margin="10,10,0,0" Grid.ColumnSpan="2">
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="Method A" Margin="5,0,0,0" />
-                        </StackPanel>
-                        <Button.ToolTip>
-                            <ToolTip>
-                                <StackPanel>
-                                    <!--<TextBlock FontWeight="Bold">Submit Request</TextBlock>-->
-                                    <TextBlock>Tooltip Placeholder</TextBlock>
-                                </StackPanel>
-                            </ToolTip>
-                        </Button.ToolTip>
-                    </Button>
-                    <Button x:Name="BNonExternal2" BorderBrush="#FFABADB3" Background="{x:Null}"
-                            Padding="5,0,5,0" Click="BNonExternal2_Click" HorizontalAlignment="Left"
-                            Width="183" Height="25" VerticalAlignment="Top" Margin="10,40,0,0" Grid.ColumnSpan="2">
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="Method B" Margin="5,0,0,0" />
-                        </StackPanel>
-                        <Button.ToolTip>
-                            <ToolTip>
-                                <StackPanel>
-                                    <TextBlock>Tooltip Placeholder</TextBlock>
-                                </StackPanel>
-                            </ToolTip>
-                        </Button.ToolTip>
-                    </Button>
-                    <Label Content="Non-External Methods" HorizontalAlignment="Left" Height="22" Margin="11,98,0,0"
-                           VerticalAlignment="Top" Width="182" FontSize="10" Background="{x:Null}" Foreground="Gray"
-                           Grid.ColumnSpan="2" />
-                    <Button x:Name="BNonExternal3" BorderBrush="#FFABADB3" Background="{x:Null}" Padding="5,0,5,0"
-                            Click="BNonExternal3_Click" HorizontalAlignment="Left" Width="183" Height="25"
-                            VerticalAlignment="Top" Margin="10,70,0,0" Grid.ColumnSpan="2">
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="Method C" Margin="5,0,0,0" />
-                        </StackPanel>
-                        <Button.ToolTip>
-                            <ToolTip>
-                                <StackPanel>
-                                    <TextBlock>Tooltip Placeholder</TextBlock>
-                                </StackPanel>
-                            </ToolTip>
-                        </Button.ToolTip>
-                    </Button>
-                </Grid>
+                              VerticalAlignment="Top" Grid.Column="1" />--><!--
+                </Grid>-->
             </TabItem>
 
         </TabControl>
-
+        <Button Grid.Column="1" Grid.Row="1" x:Name="MapMarkupCommand" BorderBrush="#FFABADB3" Background="{x:Null}" Padding="5,0,5,0"
+                            Click="MapMarkupCommand_Click" HorizontalAlignment="Left" Width="183" Height="26"
+                            VerticalAlignment="Top" Margin="300,82,0,0">
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Map Mark-ups into Model!" Margin="5,0,0,0" />
+        </StackPanel>
+        </Button>
 
     </Grid>
 </Window>
